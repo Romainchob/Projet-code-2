@@ -1,3 +1,58 @@
 .pt-12{
     padding-top: 3rem;
 }
+
+.gap-10{
+    gap: 40px;
+}
+
+.bg-purple {
+        background-color: #3D0A91;
+}
+
+.text-purple {
+        color: #3D0A91;
+}
+
+.w-90 {
+        width: 90%;
+}
+
+.gap-6{
+    gap: 24px;
+}
+
+.gap-8{
+    gap: 32px;
+
+}
+.pr-18{
+    padding-right: 72px;
+}
+.pb-12{
+    padding-bottom: 48px;
+}
+
+.pl-18{
+    padding-left: 72px;
+}
+
+.pr-6{
+    padding-right: 24px;
+}
+.pb-8{
+    padding-bottom: 32px;
+}
+
+.pl-6{
+    padding-left: 24px;
+}
+
+.pt-8{
+    padding-top: 32px;
+}
+
+.p-nav{
+    padding-left: 40px;
+    padding-right: 40px;
+}
