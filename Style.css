@@ -64,3 +64,19 @@
 .mr-6{
     margin-right: 24px;
 }
+
+.mt-12{
+    margin-top: 48px;
+}
+
+.border-top-sm {
+    border-top: 2px solid #E0CFFC;
+}
+
+.fs-12 {
+  font-size: 12px;
+}
+
+.gap-4{
+    gap: 4px;
+}
