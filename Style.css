@@ -80,3 +80,35 @@
 .gap-4{
     gap: 4px;
 }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f8f9fa;
+    }
+
+    .hero-section {
+      margin-top: 3rem;
+    }
+
+    .section-purple {
+      background-color: #5227CC;
+      color: white;
+      padding: 3rem;
+      border-radius: 1.5rem;
+    }
+
+    .bg-microsoft {
+      background-color: #6610F2;
+      border-radius: 0.75rem;
+    }
+
+    .btn-custom-purple {
+      background-color: #7749F8;
+      color: white;
+      border: none;
+    }
+
+    .btn-custom-purple:hover {
+      background-color: #6638db;
+      color: white;
+    }
