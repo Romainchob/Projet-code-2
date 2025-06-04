@@ -211,3 +211,78 @@
         border-color: #8540F5;
       }
       
+
+      .btn-primary.my-button {
+  --bs-btn-font-weight: 600;
+  --bs-btn-font-size: 1rem;
+    --bs-btn-color: white;
+    --bs-btn-bg: #6610F2;
+    --bs-btn-border-color: #6610F2;
+    --bs-btn-border-radius: .5rem;
+    --bs-btn-hover-color: white;
+    --bs-btn-hover-bg: #7a36ff;
+    --bs-btn-hover-border-color: #7a36ff;
+    --bs-btn-focus-shadow-rgb: green;
+    --bs-btn-active-color: #7a36ff;
+    --bs-btn-active-bg: #7a36ff;
+    --bs-btn-active-border-color: #7a36ff;
+}
+.btn-secondary.my-button {
+  --bs-btn-font-weight: 600;
+    --bs-btn-font-size: 1rem;
+    --bs-btn-color: #6610F2;
+    --bs-btn-bg: #EBE5FC;
+    --bs-btn-border-color: #EBE5FC;
+    --bs-btn-border-radius: .5rem;
+    --bs-btn-hover-color: white;
+    --bs-btn-hover-bg: #7a36ff;
+    --bs-btn-hover-border-color: #7a36ff;
+    --bs-btn-focus-shadow-rgb: green;
+    --bs-btn-active-color: yellow;
+    --bs-btn-active-bg: #7a36ff;
+    --bs-btn-active-border-color: #7a36ff;
+  }
+
+  .tittle-modal-section{
+    color: #000;
+font-size: 1rem;
+font-style: normal;
+font-weight: 400;
+line-height: 1.25rem; /* 125% */
+  }
+
+  .content-modal-section{
+    color: #000;
+
+/* Body/Small */
+font-size: 0.8rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+  }
+
+.opitionlist{
+  display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 0.5rem;
+align-self: stretch;
+}
+
+.badge-primary.my-badge{
+  color: white;
+   background-color:rgba(61, 10, 145, 1);
+}
+
+.listgroupeitem{
+  display: flex;
+padding: 0.5rem 1rem;
+align-items: center;
+gap: 0.5rem;
+align-self: stretch;
+border-bottom: 1px solid var(--Gray-300, #DEE2E6);
+}
+
+.subheading{
+  flex: 1 0 0;
+}
