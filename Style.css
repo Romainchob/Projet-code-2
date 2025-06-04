@@ -83,32 +83,131 @@
 
     body {
       font-family: 'Segoe UI', sans-serif;
-      background-color: #f8f9fa;
+      background-color: #ffffff;
     }
 
     .hero-section {
-      margin-top: 3rem;
-    }
-
-    .section-purple {
-      background-color: #5227CC;
-      color: white;
-      padding: 3rem;
-      border-radius: 1.5rem;
-    }
-
-    .bg-microsoft {
-      background-color: #6610F2;
-      border-radius: 0.75rem;
-    }
-
-    .btn-custom-purple {
-      background-color: #7749F8;
-      color: white;
-      border: none;
-    }
-
-    .btn-custom-purple:hover {
-      background-color: #6638db;
-      color: white;
-    }
+        margin-top: 3rem;
+      }
+      .section-purple {
+        background-color: #520DC2;
+        color: white;
+        padding: 80px;
+        border-radius: 1.5rem;
+      }
+      .microsoft-box {
+        background-color: #6610F2;
+        width: 1136px;
+        height: 105px;
+        padding: 16px 32px;
+        border-radius: 0.75rem;
+      }
+      .badge {
+        background-color: #EBE5FC;
+        color: #5227CC;
+        font-size: 0.75rem;
+        font-weight: 500;
+        padding: 4px 8px;
+        border-radius: 6px;
+        white-space: nowrap;
+        z-index: 2;
+      }
+      .btn-custom-purple {
+        background-color: #7749F8;
+        color: white;
+        border: none;
+        padding: 16px 24px;
+        border-radius: 0.5rem;
+      }
+      .btn-custom-purple:hover {
+        background-color: #6638db;
+        color: white;
+      }
+      .mb-2{
+      margin-bottom: 8px;
+  }
+  .card-grid {
+        padding: 0 220px;
+      }
+      .custom-card {
+        background-color: #fff;
+        width: 416px;
+        height: 452px;
+        border-radius: 16px;
+        overflow: hidden;
+        flex-direction: column;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+      }
+      .custom-card img {
+        width: 416px;
+        height: 234px;
+        object-fit: cover;
+        display: block;
+      }
+      .custom-card-body {
+        padding: 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        flex: 1;
+      }
+      .custom-card-title {
+        font-weight: 600;
+        font-size: 1.5rem;
+        color: #520DC2;
+        margin-bottom: 0;
+      }
+      .custom-card-text {
+        font-size: 1rem;
+        color: #152536;
+      }
+      .badge-container {
+        background-color: #E9ECEF;
+        border-radius: 1000px;
+        padding: 4px 32px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 8px;
+        margin-bottom: 1rem
+      }
+      .pill-logo {
+        font-weight: 700;
+        font-size: 1.2rem;
+        color: #520DC2;
+      }
+      .pill-tag {
+        background-color: #520DC2;
+        color: #FFFFFF;
+        font-size: 10px;
+        font-weight: 600;
+        padding: 2px 8px;
+        border-radius: 4px;
+      }
+      .card-grid .row {
+        --bs-gutter-x: 24px;
+        --bs-gutter-y: 40px;
+      }
+      .pagination-wrapper {
+        width: 1296px;
+        height: 72px;
+        background-color: #F8F9FA;
+        border-radius: 12px;
+        padding: 16px;
+      }
+      
+      .pagination .page-link {
+        color: #343a40;
+        border: 1px solid #DEE2E6;
+        margin: 0 8px;
+        padding: 8px 16px;
+        border-radius: 6px;
+        font-weight: 500;
+      }
+      
+      .pagination .page-item.active .page-link {
+        background-color: #8540F5; /* violet actif */
+        color: white;
+        border-color: #8540F5;
+      }
+      
