@@ -81,6 +81,10 @@
     gap: 4px;
 }
 
+
+
+
+
     body {
       font-family: 'Segoe UI', sans-serif;
       background-color: #ffffff;
@@ -211,6 +215,11 @@
         border-color: #8540F5;
       }
       
+
+
+
+
+
 
       .btn-primary.my-button {
   --bs-btn-font-weight: 600;
