@@ -1,39 +1,333 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
-    crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="Style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grandiose</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+   <link rel="stylesheet" href="Style.css">
+
+
+  <!-- Custom CSS -->
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f8f9fa;
+    }
+    .hero-section {
+      margin-top: 3rem;
+    }
+    .nav-link {
+      font-weight: normal;
+    }
+  </style>
 </head>
+<body>
+    <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-white shadow-sm">
+    <div class="container d-flex justify-content-start align-items-center gap-5">
+      <!-- Logo texte GRANDIOSE -->
+      <a class="navbar-brand fw-bold" style="color: #8540F5;" href="#">GRANDIOSE</a>
 
-<body style="background-color: white;">
-    <nav class="navbar navbar-expand-lg bg-white p-nav">
-        <div class="container d-flex justify-content-start align-items-center gap-5">
+      <!-- Menu -->
+      <ul class="navbar-nav d-flex flex-row gap-3">
+        <li class="nav-item">
+          <a class="nav-link text-secondary" href="#">Welcome</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-secondary" href="#">Hire us !</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="color: #5227CC;" href="#">Work</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-secondary" href="#">Blog</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- Hero -->
+  <section class="hero-section container d-flex align-items-center gap-4 mt-5">
+    <!-- Logo image -->
+    <svg width="208" height="208" viewBox="0 0 208 208" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect y="16.7339" width="192" height="192" rx="24" transform="rotate(-5 0 16.7339)" fill="#520DC2"/>
+        <path d="M111.948 152.21C115.193 151.926 117.97 151.317 120.28 150.383C120.943 149.593 121.377 148.701 121.583 147.707C121.793 146.761 121.862 145.877 121.79 145.054C121.714 144.182 121.584 143.534 121.401 143.111C121.222 142.736 120.948 142.394 120.579 142.085C118.515 141.924 116.097 141.892 113.323 141.988C110.603 142.128 108.974 142.198 108.437 142.196C101.679 142.494 96.1641 142.489 91.8912 142.179C87.614 141.821 83.8703 140.587 80.6598 138.477C77.4452 136.318 75.626 132.817 75.2023 127.974C74.9735 125.358 75.6071 122.838 77.103 120.414C78.5948 117.941 80.6205 115.714 83.1801 113.733C77.4597 111.94 72.7294 108.913 68.9893 104.653C65.2934 100.34 63.1277 94.5509 62.4921 87.2861C61.8607 80.0697 63.1948 74.121 66.4943 69.4401C69.838 64.7066 74.1436 61.2065 79.4112 58.9399C84.6788 56.6734 90.1217 55.2943 95.7398 54.8028C99.2753 54.4935 102.768 54.5296 106.217 54.911C109.667 55.2924 112.9 55.9857 115.916 56.9907L111.178 38.8114C113.975 36.7609 117.578 35.5429 121.985 35.1573C125.181 34.8776 128.207 35.1498 131.061 35.9738C133.914 36.7978 136.155 38.139 137.781 39.9976C137.921 40.4735 138.037 41.2442 138.13 42.3097C138.477 46.2811 138.139 50.7762 137.114 55.7949C136.133 60.761 134.028 64.8738 130.8 68.1332C132.848 71.4678 134.048 75.145 134.4 79.1648C134.917 85.0735 134.255 90.6217 132.416 95.8094C130.624 100.993 127.251 105.387 122.296 108.993C117.336 112.55 110.667 114.695 102.288 115.428C99.8667 115.64 97.3355 115.715 94.6948 115.654C94.7613 118.088 95.5544 120.459 97.0739 122.766C103.502 120.935 108.724 119.819 112.74 119.419L117.673 118.914C124.357 118.329 129.454 118.298 132.965 118.821C136.823 119.41 139.814 121.247 141.939 124.331C144.111 127.411 145.401 131.275 145.808 135.925C146.443 143.19 144.749 149.487 140.726 154.817C136.755 160.191 131.34 164.398 124.481 167.438C117.67 170.474 110.317 172.338 102.423 173.028C95.1097 173.668 88.4876 173.003 82.5565 171.033C76.6254 169.063 72.6211 164.85 70.5434 158.395C71.6544 152.685 74.3369 148.205 78.5911 144.953C84.9629 148.056 90.9772 150.141 96.6341 151.208C102.339 152.27 107.444 152.604 111.948 152.21ZM102.68 97.3128C106.167 97.0077 108.182 96.6118 108.725 96.1251C109.804 93.3954 110.223 90.6502 109.981 87.8896C109.731 85.0321 108.842 82.4013 107.314 79.9972C106.638 79.5196 105.197 79.2308 102.992 79.1309C100.836 79.0267 98.4986 79.0848 95.9801 79.3052C92.8321 79.5806 90.7422 79.9586 89.7106 80.4393C88.4423 83.2344 87.9267 85.9881 88.164 88.7003C88.4056 91.4609 89.3366 94.0148 90.9573 96.3619C92.0821 96.9467 93.7248 97.3155 95.8855 97.468C98.0904 97.568 100.355 97.5162 102.68 97.3128Z" fill="white"/>
+        </svg>        
+    <div>
+        <h1 class="display-4 fw-bold" style="color: #432874;">They are Grandiose</h1>
+        <p class="lead fw-normal" style="color: #432874;">Look at these projects ! Our clients portfolio</p>
+      </div>
+    </section>
+  
+    <!-- Bootstrap JS  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-          <a class="navbar-brand fw-bold"; style="color: #3D0A91"; href="/index.html">GRANDIOSE</a>
-          <ul class="navbar-nav d-flex flex-row gap-3 mb-0">
-            <li class="nav-item">
-              <a class="nav-link text-secondary"; style="color: #3D0A91"; href="/index.html">Welcome</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">Hire us !</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link"; href="/Work.html">Work</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-secondary" href="/Blog.html">Blog</a>
-            </li>
-          </ul>
+  <!-- Barre de filtres -->
+<section class="py-3">
+    <div class="container">
+      <div class="d-flex gap-3 flex-wrap">
+        <!-- Bouton 1 -->
+        <button class="btn text-white" style="background-color: #5227CC; font-size: 16px; line-height: 28px; width: 183px; height: 40px; border-radius: 4px; padding: 6px 16px;">
+          Grandiose creatives
+        </button>
+        <!-- Bouton 2 -->
+        <button class="btn text-white" style="background-color: #7749F8; font-size: 16px; line-height: 28px; width: 183px; height: 40px; border-radius: 4px; padding: 6px 16px;">
+          All
+        </button>
+        <!-- Bouton 3 -->
+        <button class="btn text-white" style="background-color: #7749F8; font-size: 16px; line-height: 28px; width: 183px; height: 40px; border-radius: 4px; padding: 6px 16px;">
+          Random
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <div class="container my-5">
+    <div class="row gy-4 justify-content-center">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+  .custom-card {
+    width: 416px;
+    height: 416px;
+    border-radius: 24px;
+    padding: 32px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+    background-color: #fff;
+  }
+
+  .card-title-custom {
+    font-size: 40px;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+    line-height: 40px;
+    letter-spacing: -0.8px;
+    margin: 0;
+  }
+
+  .card-subtitle {
+    font-size: 17px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    line-height: 28px;
+    margin-bottom: 8px;
+  }
+
+  .card-badge {
+    background-color: #E9ECEF;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 1;
+    display: inline-block;
+    min-width: 53px;
+    height: 20px;
+    font-family: 'Inter', sans-serif;
+  }
+
+  .card-link {
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    color: #000;
+    text-decoration: underline;
+  }
+</style>
+
+<div class="container my-5">
+  <div class="row gy-4 justify-content-center">
+
+    <!-- Carte 1 -->
+    <div class="col-md-4 d-flex justify-content-center">
+      <div class="d-flex flex-column justify-content-between custom-card" style="background-color: #A7D2FD;">
+        <div>
+          <span class="card-badge">Badges</span>
+          <p class="card-subtitle">Preamble</p>
+          <h2 class="card-title-custom">How to sell drugs <br> online, fast</h2>
+        </div>
+        <div>
+          <a href="#" class="card-link">Read</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Carte 2 -->
+    <div class="col-md-4 d-flex justify-content-center">
+      <div class="d-flex flex-column justify-content-between custom-card" style="background-color: #D8B4FE;">
+        <div>
+          <span class="card-badge">Badges</span>
+          <p class="card-subtitle">Preamble</p>
+          <h2 class="card-title-custom">Do what I say,<br> not what I do</h2>
+        </div>
+        <div>
+          <a href="#" class="card-link">Read</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Carte 3 -->
+    <div class="col-md-4 d-flex justify-content-center">
+      <div class="d-flex flex-column justify-content-between custom-card" style="background-color: #FBCFE8;">
+        <div>
+          <span class="card-badge">Badges</span>
+          <p class="card-subtitle">Preamble</p>
+          <h2 class="card-title-custom">Learn by doing,<br> do it now</h2>
+        </div>
+        <div>
+          <a href="#" class="card-link">Read</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Carte 4 -->
+    <div class="col-md-4 d-flex justify-content-center">
+      <div class="d-flex flex-column justify-content-between custom-card" style="background-color: #FED7AA;">
+        <div>
+          <span class="card-badge">Badges</span>
+          <p class="card-subtitle">Preamble</p>
+          <h2 class="card-title-custom">Looking for a job?<br>Let others do this for you</h2>
+        </div>
+        <div>
+          <a href="#" class="card-link">Read</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Carte 5 -->
+    <div class="col-md-4 d-flex justify-content-center">
+      <div class="d-flex flex-column justify-content-between custom-card" style="background-color: #BFDBFE;">
+        <div>
+          <span class="card-badge">Badges</span>
+          <p class="card-subtitle">Preamble</p>
+          <h2 class="card-title-custom">Grandiose, the best thing that happened to me</h2>
+        </div>
+        <div>
+          <a href="#" class="card-link">Read</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Carte 6 -->
+    <div class="col-md-4 d-flex justify-content-center">
+      <div class="d-flex flex-column justify-content-between custom-card" style="background-color: #C7D2FE;">
+        <div>
+          <span class="card-badge">Badges</span>
+          <p class="card-subtitle">Preamble</p>
+          <h2 class="card-title-custom">Get a life, get a job,<br> get a dog</h2>
+        </div>
+        <div>
+          <a href="#" class="card-link">Read</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+    </div>
+  </div>
+
+<style>
+  .pagination-box {
+    max-width: 1296px;
+    height: 72px;
+    padding: 16px;
+    background-color: #F8F9FA;
+    border-radius: 8px;
+    margin: 40px auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 8px;
+    font-family: 'Inter', sans-serif;
+  }
+
+  .pagination-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    padding: 12px 16px;
+    border: 1px solid #DEE2E6;
+    background-color: white;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: center;
+    color: #000;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+
+  .pagination-button:hover {
+    background-color: #7749F8;
+    color: white;
+  }
+
+  .pagination-prev {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+  }
+
+  .pagination-next {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+  }
+
+  .pagination-number {
+    width: 40px;
+    padding: 12px 0;
+  }
+</style>
+
+<!-- Pagination -->
+<div class="pagination-box">
+  <div class="pagination-button pagination-prev">Previous</div>
+
+  <div class="pagination-button pagination-number">1</div>
+  <div class="pagination-button pagination-number">2</div>
+  <div class="pagination-button pagination-number">3</div>
+
+  <div class="pagination-button pagination-next">Next</div>
+</div>
+
+<footer class="position-relative bg-transparent" style="height: 454px;">
+        <!-- Rectangle violet en fond -->
+        <div class="position-absolute bottom-0 start-0 w-100 bg-purple " style="height: 322px;"></div>
+
+        <!-- Bloc blanc au premier plan -->
+        <div
+          class="position-absolute top-0 start-50 translate-middle-x w-90 bg-white d-flex flex-column align-items-start"
+          style="width: 90%;height: 374px;border-radius: 16px; padding: 72px 64px;gap: 40px;">
+
+          <!-- Logo + bouton -->
+
+          <img src="/images/Logo.svg" alt="" style="height: 48px;">
+          <button class="btn btn-primary bg-purple border-0" style="padding: 16px 24px;background-color: #7749F8;">Be
+            Grandiose</button>
+
+
+          <!-- Infos des bureaux -->
+          <div class="container px-0">
+
+            <div class="row text-purple">
+              <div class="col-6 mb-3">
+                <h5 class="fw-bold" style="color: #520DC2;">New York Office</h5>
+                <p class="mb-0" style="color: #3D0A91;">1065 Avenue of the Americas,New York, NY 10018-1878</p>
+              </div>
+              <div class="col-6 mb-3">
+                <h5 class="fw-bold" style="color: #520DC2;">London Office</h5>
+                <p class="mb-0" style="color: #3D0A91;">Swains Lane Highgate, London N6 6PJ England</p>
+              </div>
+            </div>
+          </div>
 
         </div>
-      </nav>
-
-</body>
+      </footer>
+  
+  
+  
+  </body>
+  </html>
